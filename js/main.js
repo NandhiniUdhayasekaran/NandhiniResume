@@ -286,6 +286,12 @@
 		})
 	};
 
+	var getExp = function(){
+		let todayDt = new Date().getFullYear();
+		let startDt = new Date("2016/04/16").getFullYear();
+		getExp = startDt - todayDt;
+	}
+
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -304,6 +310,7 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		getExp();
 	});
 
 
